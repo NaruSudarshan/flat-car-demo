@@ -1,0 +1,18 @@
+{
+  "ignition": {
+    "version": "3.0.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "name": "docker.service",
+        "enabled": true
+      },
+      {
+        "name": "myapp.service",
+        "enabled": true,
+        "contents": "[Unit]\nDescription=My App Container\nAfter=docker.service\nRequires=docker.service\n\n[Service]\nExecStart=/usr/bin/docker run -d -p 3000:3000 your-image\nRestart=always\n\n[Install]\nWantedBy=multi-user.target"
+      }
+    ]
+  }
+}

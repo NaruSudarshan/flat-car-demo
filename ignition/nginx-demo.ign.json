@@ -1,0 +1,18 @@
+{
+  "ignition": {
+    "version": "3.0.0"
+  },
+  "systemd": {
+    "units": [
+      {
+        "name": "docker.service",
+        "enabled": true
+      },
+      {
+        "name": "hello.service",
+        "enabled": true,
+        "contents": "[Unit]\nDescription=Hello World\nAfter=docker.service\nRequires=docker.service\n\n[Service]\nExecStart=/usr/bin/docker run --rm -p 80:80 nginxdemos/hello\nRestart=always\n\n[Install]\nWantedBy=multi-user.target"
+      }
+    ]
+  }
+}
