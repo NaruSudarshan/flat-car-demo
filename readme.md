@@ -30,7 +30,7 @@ Built and tested on **AWS EC2**, this setup uses:
 
 ### 🌐 Nginx Hello World (container output):
 
-![Nginx Hello Page](screenshots/nginx-demo.png)
+![Nginx Hello Page](screenshots/demo.png)
 
 ---
 
@@ -61,8 +61,6 @@ The `nginx-demo.ign.json` file configures systemd to:
   }
 }
 
----
-
 ## 💡 What Else Can Flatcar Be Used For?
 
 Flatcar is designed for minimal, secure, and automated environments. Here are some simple, beginner-friendly use cases:
@@ -76,5 +74,4 @@ Flatcar is designed for minimal, secure, and automated environments. Here are so
 
 Flatcar is lightweight and built for the cloud — it works great when you want to automate, simplify, and containerize your workloads.
 
----
 
