@@ -61,6 +61,8 @@ The `nginx-demo.ign.json` file configures systemd to:
   }
 }
 
+```
+
 ## 💡 What Else Can Flatcar Be Used For?
 
 Flatcar is designed for minimal, secure, and automated environments. Here are some simple, beginner-friendly use cases:
